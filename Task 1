@@ -1,0 +1,175 @@
+1. The popular TV series "Stay Alive" used a sequence of numbers 4 8 15 16 23 42, which
+brought the heroes good luck and helped to hit the jackpot in the lottery. Write a
+program that outputs a given sequence of numbers with one space between them
+Sample Output:
+4 8 15 16 23 42
+
+Code:
+seq = [4, 8, 15, 16, 23, 42]
+n = ' '.join(map(str, seq))
+print(n)
+
+-----------------------------------------------------------------------------------------------------
+
+2.Change the previous program so that each number of the sequence 4 8 15 16 23 42 is
+printed on a separate line.
+Sample Output:
+4
+8
+15
+16
+23
+42
+
+Code
+seq = [4, 8, 15, 16, 23, 42]
+for n in seq:
+    print(n)
+
+--------------------------------------------------------------------------------------------------------
+3. Write a program that outputs the specified triangle consisting of asterisks (*).
+Sample Output:
+*
+**
+***
+****
+*****
+******
+*******
+
+Code
+n = int(input())
+for i in range(1, n + 1):
+    print('*' * i)
+
+-----------------------------------------------------------------------------------------------------
+
+4. Write a program to display three consecutive numbers, each on a separate line. The first
+number is entered by the user, the remaining numbers are calculated in the program.
+Sample Input 1:
+8
+Sample Output 1:
+8
+9
+10
+
+n = int(input())
+m = n + 1
+k = n + 2
+
+print(n)
+print(m)
+print(k)
+
+-----------------------------------------------------------------------------------------------------
+
+5. Write a program that reads three integers and displays their sum on the screen. Each
+number is written in a separate line.
+Sample Input 1:
+9
+11
+2
+Sample Output 1:
+22
+
+Code
+
+n = int(input())
+m = int(input())
+k = int(input())
+
+sum = n + m + k
+print("Sum:", sum)
+
+-----------------------------------------------------------------------------------------------------
+
+6. Write a program that calculates the volume of a cube and the area of its full surface,
+based on the entered value of the edge length.
+Sample Input 1:
+25
+Sample Output 1:
+Объем = 15625
+Площадь полной поверхности = 3750
+
+Code
+l = float(input())
+v = l ** 3
+s = 6 * l ** 2
+print("Объем =", v)
+print("Площадь полной поверхности =", s)
+
+
+-----------------------------------------------------------------------------------------------------
+
+7. Write a program that reads an integer, after which the next and previous integer with
+explanatory text are displayed on the screen.
+Sample Input 1:
+20
+Sample Output 1:
+Следующее за числом 20 число: 21
+Для числа 20 предыдущее число: 19
+
+Code
+n = int(input())
+next_no = n + 1
+prev_no = n - 1
+print(f"Следующее за числом {n} число: {next_no}")
+print(f"Для числа {n} предыдущее число: {prev_no}")
+
+-----------------------------------------------------------------------------------------------------
+
+8. Write a program that calculates the cost of three computers consisting of a monitor, a
+system unit, a keyboard and a mouse.
+Sample Input 1:
+9900
+55600
+3999
+2990
+Sample Outp
+217467
+
+Code
+n = int(input("Monitor: "))
+m = int(input("System: "))
+k = int(input("Keyboard: "))
+i = int(input("Mouse: "))
+pc = n + m + k + i
+
+total = 3 * pc
+print(total)
+
+-----------------------------------------------------------------------------------------------------
+
+9. Write a program that calculates the sum, difference, and product of two integers
+entered from the keyboard.
+Sample Input 1:
+2
+7
+Sample Output 1:
+2 + 7 = 9
+2 - 7 = -5
+2 * 7 = 14
+
+Code
+n = int(input())
+m = int(input())
+sum = n + m
+diff = n - m
+product = n * m
+
+print(f"{n} + {m} = {sum}")
+print(f"{n} - {m} = {diff}")
+print(f"{n} * {m} = {product}")
+
+-----------------------------------------------------------------------------------------------------
+
+10. Write a program that finds the full number of meters by a given number of centimeters.
+Sample Input 1:
+345
+Sample Output 1:
+3
+
+Code
+n = int(input())
+meters = n // 100
+print(meters)
