@@ -1,0 +1,54 @@
+#1: Star Rectangle
+
+n = int(input())
+
+if 1 <= n <= 20:
+    for _ in range(n):
+        print('*' * 19)
+else:
+    print("error")
+
+---------------------------------------------
+#2: Repeat After Me
+
+text = input()
+for i in range(10):
+    print(f"{i} {text}")
+
+---------------------------------------------
+#3: Star Triangle
+
+n = int(input())
+for i in range(n, 0, -1):
+    print('*' * i)
+
+---------------------------------------------
+#4: Sequence of Numbers 1
+
+m = int(input())
+n = int(input())
+for i in range(m, n + 1):
+    print(i)
+
+---------------------------------------------
+#5: Sequence of Numbers 2
+
+m = int(input())
+n = int(input())
+if m < n:
+    for i in range(m, n + 1):
+        print(i)
+else:
+    for i in range(m, n - 1, -1):
+        print(i)
+
+---------------------------------------------
+#6: Sequence of Numbers 3
+
+m = int(input())
+n = int(input())
+for i in range(m, n - 1, -1):
+    if i % 2 != 0:
+        print(i)
+for i in range(m - (m % 2 == 0), n - 1, -2):
+    print(i)
