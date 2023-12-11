@@ -1,0 +1,49 @@
+#1 Password
+password = input()
+confirmation = input()
+if password == confirmation:
+    print("Password accepted")
+else:
+    print("Password not accepted")
+
+---------------------------------------------
+
+#2 Even or odd?
+n = int(input())
+if n % 2 == 0:
+    print("Even value")
+else:
+    print("Odd number")
+
+---------------------------------------------
+
+#3 The smallest of two numbers
+
+n = int(input())
+k = int(input())
+print(min(n, k))
+
+---------------------------------------------
+#4 Age Group
+age = int(input())
+if age <= 13:
+    print("childhood")
+elif 14 <= age <= 24:
+    print("youth")
+elif 25 <= age <= 59:
+    print("maturity")
+else:
+    print("old age")
+
+---------------------------------------------
+#5 Triangle view
+n = int(input())
+m = int(input())
+k = int(input())
+
+if n == m == k:
+    print("Equilateral")
+elif n== m or n == k or m == k:
+    print("Isosceles")
+else:
+    print("Versatile")
